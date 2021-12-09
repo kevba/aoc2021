@@ -3,6 +3,7 @@ package aoc2021
 import (
 	"bufio"
 	"log"
+	"math"
 	"os"
 	"strconv"
 	"time"
@@ -56,6 +57,10 @@ func AtoiSlice(s []string) []int {
 	}
 
 	return ints
+}
+
+func IntAbs(n int) int {
+	return int(math.Abs(float64(n)))
 }
 
 func Time() func() {
